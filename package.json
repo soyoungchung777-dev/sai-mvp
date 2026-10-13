@@ -1,0 +1,12 @@
+{
+  "name": "sai-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "사이 결혼 가치관 인터뷰 MVP",
+  "allowScripts": {
+    "supabase": true
+  },
+  "devDependencies": {
+    "supabase": "^2.120.0"
+  }
+}
