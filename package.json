@@ -2,7 +2,7 @@
   "name": "sai-mvp",
   "version": "1.0.0",
   "private": true,
-  "description": "커플코드 결혼 가치관 인터뷰 MVP",
+  "description": "코드핏 결혼 가치관 인터뷰 MVP",
   "allowScripts": {
     "supabase": true
   },
