@@ -163,6 +163,18 @@ finally{submit.disabled=false;submit.textContent='정식 버전 출시 알림 �
 $('name').addEventListener('input',()=>$('name').setCustomValidity(''));
 ['email','phone','instagram'].forEach(id=>$(id).addEventListener('input',()=>{$(id+'-error').hidden=true;$(id).removeAttribute('aria-invalid')}));
 </script>
+<!-- Aggregate visit statistics only; form answers and contact details are not sent. -->
+<script>
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+window.va('beforeSend', function (event) {
+  const url = new URL(event.url, window.location.origin);
+  if (url.hostname !== 'sai-mvp-murex.vercel.app') return null;
+  url.search = '';
+  url.hash = '';
+  return { ...event, url: url.toString() };
+});
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 
